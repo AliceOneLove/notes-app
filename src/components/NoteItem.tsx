@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-interface NoteItemProps {
+export interface NoteItemProps {
     id: number;
     title: string;
     body: string;
