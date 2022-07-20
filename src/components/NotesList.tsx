@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from 'react';
 import NoteItem, { NoteItemProps } from './NoteItem';
 
-const NotesList: FC = () => {
+const NotesList: FC<React.HTMLAttributes<HTMLDivElement>> = () => {
     const [notes, setNotes] = useState<[NoteItemProps]>();
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/posts?_limit=10')
