@@ -1,0 +1,10 @@
+body {
+    height: 98vh;
+    background-color: rgba(102, 51, 0, 0.7);
+}
+
+.App {
+    height: 98vh;
+    display: flex;
+    flex-direction: row;
+}

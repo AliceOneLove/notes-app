@@ -1,0 +1,8 @@
+.noteItem {
+    height: auto;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
