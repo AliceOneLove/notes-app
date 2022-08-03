@@ -1,7 +1,11 @@
 .notesList {
     width: 33vw;
-    height: 96vh;
+    height: 100vh;
     background-color: rgba(102, 51, 0, 0.7);
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border: 2px solid rgba(102, 51, 0, 1);
+    overflow: scroll;
+    box-sizing: border-box;
 }
