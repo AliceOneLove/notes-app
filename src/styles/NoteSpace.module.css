@@ -1,6 +1,7 @@
 .noteSpace {
-    width: 96vh;
+    height: 90vh;
+    width: 77vw;
     background-color: rgba(102, 51, 0, 0.7);
-    padding: 10px;
     border: 2px solid rgba(102, 51, 0, 1);
+    box-sizing: border-box;
 }

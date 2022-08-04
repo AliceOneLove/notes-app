@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 import classes from '../styles/NoteItem.module.css';
 
 export interface NoteItemProps {
-    id: number;
-    title: string;
-    body: string;
+    id?: number;
+    title?: string;
+    body?: string;
 }
 
 const NoteItem: FC<NoteItemProps> = ({id, title, body}: NoteItemProps) => {
