@@ -1,7 +1,30 @@
 .noteSpace {
-    height: 90vh;
+    height: 100%;
     width: 77vw;
-    background-color: rgba(102, 51, 0, 0.7);
-    border: 2px solid rgba(102, 51, 0, 1);
+    border: 2px solid black;
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.noteSpaceHeader {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.noteSpaceTitle {
+    width: 75%;
+    height: 40%;
+    box-sizing: border-box;
+}
+
+.noteSpaceBody {
+    height: 88%;
+    width: 97%;
     box-sizing: border-box;
 }

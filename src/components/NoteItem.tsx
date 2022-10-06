@@ -1,16 +1,20 @@
 import React, { FC } from 'react';
 import classes from '../styles/NoteItem.module.css';
+import {Note, setCurrentNote, removeNote} from '../store/reducers/notesListSlice';
+import { useDispatch } from 'react-redux';
 
-export interface NoteItemProps {
-    id?: number;
-    title?: string;
-    body?: string;
+interface INoteProps extends Note {
+  index: number;
 }
 
-const NoteItem: FC<NoteItemProps> = ({id, title, body}: NoteItemProps) => {
+const NoteItem: FC<INoteProps> = ({index, id, title, body}) => {
+  const dispatch = useDispatch();
   return (
-    <div onClick={() => console.log('cock')} className={classes.noteItem}>
-        {id}. {title}
+    <div className={classes.noteItemContainer}>
+      <div onClick={() => dispatch(setCurrentNote({id, title, body}))} className={classes.noteItem}>
+        {index}. {title}
+      </div>
+      <button onClick={() => dispatch(removeNote(id))} className={classes.noteItemButton}>X</button>
     </div>
   );
 };

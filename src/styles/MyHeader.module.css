@@ -1,5 +1,5 @@
 .myHeader {
-    background-color: rgba(102, 51, 0, 0.9);
-    height: 10vh;
-    width: 100vw;
+    height: 5%;
+    font-size: 2rem;
+    padding-left: 2%;
 }
